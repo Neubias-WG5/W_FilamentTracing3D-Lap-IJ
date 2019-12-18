@@ -53,24 +53,24 @@
     },
     {
       "default-value": 1,
-      "name": "Scale",
+      "name": "scale",
       "description": "Tubeness filter scale",
       "set-by-server": false,
       "value-key": "@ID",
       "optional": true,
-      "id": "Scale",
+      "id": "scale",
       "type": "Number",
       "command-line-flag": "--@id"
     }
     ,
     {
       "default-value": 5,
-      "name": "Global threshold",
+      "name": "thr",
       "description": "Intensity level of the global threshold",
       "set-by-server": false,
       "value-key": "@ID",
       "optional": true,
-      "id": "Thr",
+      "id": "thr",
       "type": "Number",
       "command-line-flag": "--@id"
     }
