@@ -29,6 +29,7 @@ for(i=0; i<images.length; i++) {
 	image = images[i];
 	if (endsWith(image, ".tif")) {
 		// Workflow
+		open(inputDir + "/" + image);
 		run("Tubeness", "sigma="+d2s(scale,2));
 		run("Maximum 3D...", "x=2 y=2 z=2");
 		run("Minimum 3D...", "x=2 y=2 z=2");
