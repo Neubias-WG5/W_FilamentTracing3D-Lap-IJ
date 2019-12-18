@@ -53,7 +53,7 @@
     },
     {
       "default-value": 1,
-      "name": "scale",
+      "name": "Filament scale",
       "description": "Tubeness filter scale",
       "set-by-server": false,
       "value-key": "@ID",
@@ -65,7 +65,7 @@
     ,
     {
       "default-value": 5,
-      "name": "thr",
+      "name": "Threshold level",
       "description": "Intensity level of the global threshold",
       "set-by-server": false,
       "value-key": "@ID",
