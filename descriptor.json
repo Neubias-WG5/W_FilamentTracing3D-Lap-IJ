@@ -75,11 +75,11 @@
       "command-line-flag": "--@id"
     }
   ],
-  "name": "FilamentTracing3D-ImageJ",
+  "name": "FilamentTracing3D-Tub-IJ",
   "description": "A software for filament tracing in 3D images",
   "schema-version": "cytomine-0.1",
   "container-image": {
-    "image": "neubiaswg5/w_filamenttracing3d-imagej",
+    "image": "neubiaswg5/w_filamenttracing3d-tub-ij",
     "type": "singularity"
   }
 }
