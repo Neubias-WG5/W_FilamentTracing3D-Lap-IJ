@@ -27,26 +27,26 @@ RUN rm fiji-linux64-20170530.zip
 # ---------------------------------------------------------------------------------------------------------------------
 # Install Cytomine python client
 RUN git clone https://github.com/cytomine-uliege/Cytomine-python-client.git
-RUN cd /Cytomine-python-client && git checkout tags/v2.3.0.poc.1 && pip install .
+RUN cd /Cytomine-python-client && git checkout tags/v2.7.3 && pip install .
 RUN rm -r /Cytomine-python-client
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Install Neubias-W5-Utilities (annotation exporter, compute metrics, helpers,...)
 RUN apt-get update && apt-get install libgeos-dev -y && apt-get clean
-RUN git clone https://github.com/Neubias-WG5/neubiaswg5-utilities.git \
-    && cd /neubiaswg5-utilities/ \
-    && git checkout tags/v0.8.7 \
+RUN git clone https://github.com/Neubias-WG5/biaflows-utilities.git \
+    && cd /biaflows-utilities/ \
+    && git checkout tags/v0.9.1 \
     && pip install .
 
 # Install skan from master branch to get Skeleton
 RUN pip install git+https://github.com/jni/skan
 
 # install utilities binaries
-RUN chmod +x /neubiaswg5-utilities/bin/*
-RUN cp /neubiaswg5-utilities/bin/* /usr/bin/
+RUN chmod +x /biaflows-utilities/bin/*
+RUN cp /biaflows-utilities/bin/* /usr/bin/
 
 # cleaning
-RUN rm -r /neubiaswg5-utilities
+RUN rm -r /biaflows-utilities
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Install Macro
